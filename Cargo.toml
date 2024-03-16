@@ -7,7 +7,7 @@ description = """
 jsend is a lightweight Rust crate for structuring API responses in the JSend
 format, offering a standardized approach for success, fail, and error messages
 in JSON.
-""""
+"""
 documentation = "https://github.com/austinmoore-/jsend"
 homepage = "https://github.com/austinmoore-/jsend"
 repository = "https://github.com/austinmoore-/jsend"
