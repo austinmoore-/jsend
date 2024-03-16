@@ -1,0 +1,29 @@
+[package]
+name = "jsend"
+version = "0.1.0"
+authors = ["Austin Moore"]
+edition = "2021"
+description = """
+jsend is a lightweight Rust crate for structuring API responses in the JSend
+format, offering a standardized approach for success, fail, and error messages
+in JSON.
+""""
+documentation = "https://github.com/austinmoore-/jsend"
+homepage = "https://github.com/austinmoore-/jsend"
+repository = "https://github.com/austinmoore-/jsend"
+license = "MIT"
+keywords = ["jsend", "json", "serde", "api"]
+categories = ["web-programming"]
+
+[features]
+default = ["serde"]
+serde = ["dep:serde", "dep:serde_json"]
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"], optional = true }
+serde_json = { version = "1.0", optional = true }
+
+[dev-dependencies]
+axum = "0.7.4"
+tokio = { version = "1.36.0", features = ["macros", "rt-multi-thread"] }
+uuid = { version = "1.7.0", features = ["serde", "v4"] }
