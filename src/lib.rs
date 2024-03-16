@@ -7,7 +7,7 @@
 //!
 //! ```toml
 //! [dependencies]
-//! jsend = "0.1.0"
+//! jsend = "1.0"
 //! serde = { version = "1.0", features = ["derive"] }
 //! ```
 //!
